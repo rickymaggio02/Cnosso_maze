@@ -16,42 +16,6 @@ void home(){
     fclose(f);
 }
 
-void swordImage(int n){
-    FILE *f;
-    if(n==1){
-        f=fopen("./sword/sword.txt", "r");
-    }
-    if(n==2){
-        f=fopen("./sword/sword2.txt", "r");
-    }
-    if(n==3){
-        f=fopen("./sword/sword3.txt", "r");
-    }
-    if(n==4){
-        f=fopen("./sword/SwSh.txt", "r");
-    }
-    if(n==5){
-        f=fopen("./sword/katana.txt", "r");
-    }
-    if(n==6){
-        f=fopen("./sword/fioretto.txt", "r");
-    }
-    if(n==7){
-        f=fopen("./sword/finalSword.txt", "r");
-    }
-
-    if(f==NULL){
-        printf("errore nell'apertura del file");
-        return;
-    }
-
-    char read_string[MAX_LEN];
- 
-    while(fgets(read_string,sizeof(read_string),f) != NULL)
-        printf("%s",read_string);
-
-    fclose(f);
-}
 
 void enemyImage(int n){
     FILE *f;
